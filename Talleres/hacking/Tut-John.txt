@@ -1,0 +1,22 @@
+john -test
+cd Documentos
+john SimplePassword.txt 
+john --show SimplePassword.txt
+
+con diccionario
+john --wordlist=SimpleDictionary.lst SimplePassword.txt
+john --show Simplepassword.txt
+
+john --wordlist=SimpleDictionary.lst UserPassword.txt
+john --show UserPassword.txt
+
+.....
+
+sudo cp /etc/shadow /root/
+adduser user1
+sudo cp /etc/shadow /usr/share/john/
+cd /usr/share/john/
+john -w=password.lst password.txt
+sudo john password.lst password.txt
+john --format=crypt password.txt
+john --show passwords.txt
