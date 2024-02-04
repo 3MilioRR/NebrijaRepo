@@ -1,0 +1,23 @@
+********** ESTEGANOGRAFÍA *****************
+
+ejecutar ImgHide
+cd tools/imghide
+python3 imghide.py
+
+
+ejecutar STEGHIDE (ocultar texto en fotos)
+
+cd Documentos/Talleres/stego
+steghide --help
+- ocultar
+steghide embed -ef <text_file> -cf <cover_file>
+- extraer
+steghide extract -sf <cover_file>
+
+
+ejecutar STEGCRAKER
+stegcracker <file> [<wordlist>]
+
+EJ: 
+stegcracker <file> /Documentos/Talleres/hacking/rockyou.txt
+

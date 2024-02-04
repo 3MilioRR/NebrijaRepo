@@ -1,0 +1,58 @@
+
+
+************  HACKING ***********************
+
+--- RECONOCIMIENTO Y ENUMERACION
+
+Tool: NET RADAR
+observaciones: Se requiere autorizacion para escanear redes, incluso propias
+
+para ejecutar NETRADAR
+cd tools/NetRadar
+bash netradar.sh
+
+
+
+TooL: nmap
+observaciones: SOLO estas autorizado a lanzar escaners contra el sitio web: scanme.nmap.org
+Guía de referencia de Nmap: https://nmap.org/man/es/index.html
+(snap connect nmap:network-control)
+(snap connections nmap)
+
+para ejecutar nmap: arrancar un terminal 
+ejemplos:
+nmap -sL scanme.nmap.org       <--- Lista los objetivoa a escanear
+nmap -O scanme.nmap.org        <--- detecta sistema operativo
+nmap -p 20-1024 45.33.32.156   <--- sondea los puertos indicados
+nmap -v -A scanme.nmap.org     <--- Habilita la detección de SO y de versión 
+nmap -sV -p T:22,80,9929,31337  scanme.nmap.org <--- Sondear puertos abiertos, para obtener información de servicio/versión
+nmap –sA 45.33.32.156          <---- Comprobación de Firewall Root
+
+
+--- PYPHISHER
+
+cd tools/PyPhisher
+python3 pyphisher.py
+
+
+--- SOCIAL FISH
+- tutorial: https://www.linkedin.com/pulse/creating-phishing-campaign-socialfish-ngrok-fun-mark-roenicke
+cd tools/SocialFish
+python3 SocialFish.py antonio qwerty
+http://127.0.0.1:5000/neptune
+
+Ejemplo
+Clone: https://es.linkedin.com/
+Redirection: https://es.linkedin.com/
+
+
+--- JOHN THE RIPPER
+
+john --test
+john SimplePassword.txt
+john --wordlist=SimpleDictionary.txt SimplePassword.txt
+john --fork=2 --wordlist=rockyou.txt SimplePassword.txt
+john --show SimplePassword.txt
+
+
+

@@ -1,0 +1,21 @@
+**************************************
+
+SHERLOCK
+
+python3 sherlock --help
+python3 sherlock ericorui
+python3 sherlock ericorui -o exit.txt
+
+
+*****************************************************
+SPIDERFOOT
+(instalada)
+
+
+
+*****************************************************
+SOCIAL- ANALYZER
+cd tools/socanalyzer
+npm start
+
+Standard localhost WEB-APP url: http://0.0.0.0:9005/app.html
