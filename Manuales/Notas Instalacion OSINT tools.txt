@@ -1,0 +1,17 @@
+
+INSTALACION DE HERRAMIENTAS OSINT
+
+****************************************************+
+THE HARVESTER
+Permite automatizar, optimizar y potenciar la fase de reconocimiento de forma pasiva, obteniendo información importante de nuestro objetivo: dominios, correos, ... 
+
+# instalación
+git clone https://github.com/laramies/theHarvester tools/theHarvester
+cd tools/theHarvester
+python3 -m pip install -r requirements/base.txt
+python3 -m pip install -r requirements/dev.txt
+python3 theHarvester.py -h
+
+
+
+

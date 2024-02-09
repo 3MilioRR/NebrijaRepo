@@ -1,0 +1,18 @@
+
+INSTALACION DE DVWA sobre Docker
+
+https://hub.docker.com/r/vulnerables/web-dvwa/
+https://danielmaldonado.com.ar/seguridad/ejecutar-dvwa-en-docker/
+
+--- Instalación
+docker pull vulnerables/web-dvwa
+
+--- Ejecutar
+docker run --rm -it -p 80:80 vulnerables/web-dvwa
+
+
+
+
+
+
+

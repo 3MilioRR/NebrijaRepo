@@ -1,0 +1,29 @@
+****************************************************
+ IMG-HIDE
+
+- instalación
+git clone https://github.com/teja156/imghide tools/imghide
+cd tools/imghide
+pip install -r requirements.txt
+
+*****************************************************
+  STEGHIDE
+Steghide admite ocultar datos detrás de cualquier imagen (jpg / jpeg / png / gif / bmp), audio (mp3 / wav), excel, etc.
+Utiliza Rijndael (AES) para encubrir el registro y la medida clave es de 128 bits
+https://esgeeks.com/steghide-guia-de-uso/
+ 
+- instalacion
+sudo apt install steghide
+steghide --help
+
+******************************************************
+  StegCracker
+Steganography brute-force utility to uncover hidden data inside files.  
+The program requires the steghide binary, and Python 3.6
+sudo apt-get install steghide -y
+
+- instalación
+pip3 install stegcracker
+
+- para actualizar StegCracker
+pip3 install stegcracker -U --force-reinstall

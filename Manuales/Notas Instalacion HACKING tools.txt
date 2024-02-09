@@ -1,0 +1,60 @@
+
+INSTALACION DE HERRAMIENTAS HACKING
+
+*****************************************************
+
+NET RADAR
+NetRadar is a Networking tool focused on mapping local and WiFi networks. It provides detailed information about connected devices, open ports, servers and automated scans for WiFi networks.NetRadar es una herramienta de Networking centrada en el mapeo de redes locales y WiFi. Proporciona información detallada sobre dispositivos conectados, puertos, ...
+https://github.com/XDeadHackerX/NetRadar
+
+- Instalación
+sudo apt update && apt -y full-upgrade
+sudo apt-get install git
+git clone https://github.com/XDeadHackerX/NetRadar tools/NetRadar
+cd tools/NetRadar
+chmod 777 netradar.sh
+chmod 777 installer.sh
+bash netradar.sh
+
+
+
+*****************************************************
+
+PYPHISHER
+Easy to use phishing tool with 77 website templates.
+https://github.com/KasRoudra/PyPhisher
+
+- Instalación
+sudo apt install git python3 python3-pip php openssh-client -y
+git clone https://github.com/KasRoudra/PyPhisher tools/PyPhisher
+cd tools/PyPhisher
+pip3 install -r files/requirements.txt
+
+Run the tool
+python3 pyphisher.py
+
+
+*****************************************************
+
+SOCIAL FISH
+Phishing Tool & Information Collector
+https://github.com/UndeadSec/SocialFish
+https://github.com/UndeadSec/SocialFish/wiki/Setting-Up-SocialFish
+
+- Instalación
+sudo apt-get install python3 python3-pip python3-dev -y
+git clone https://github.com/UndeadSec/SocialFish.git tools/SocialFish
+cd tools/SocialFish
+python3 -m pip install -r requirements.txt
+
+CHANGE APP SECRET KEY - File: SocialFish/core/config.py
+APP_SECRET_KEY = '<CHANGE ME SF>'  --> APP_SECRET_KEY = '<qwerty>' 
+
+Run the tool
+python3 SocialFish.py user password
+http://127.0.0.1:5000/neptune
+
+
+
+
+

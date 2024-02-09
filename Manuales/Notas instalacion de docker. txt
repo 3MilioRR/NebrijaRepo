@@ -1,0 +1,36 @@
+
+*** actualizar lista de paquetes
+sudo apt update
+
+*** instalar requisitos previos
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+*** instala cert GPG (deprecado) curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+*** instala cert - nuevo 
+sudo apt install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+*** Agregue el repositorio de Docker a las fuentes de APT:
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update
+
+*** instalar docker
+apt-cache policy docker-ce
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo systemctl status docker
+
+--- para ejecutar docker sin sudo
+sudo usermod -aG docker ${USER}
+su - ${USER}
+id -nG
+sudo usermod -aG docker antonio
+
+--- instalar docker compose
+sudo apt install docker-compose-plugin
+
+mas ayuda y comandos de docker
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
+https://kinsta.com/es/blog/instalar-docker-ubuntu/
+https://diarioprogramador.com/como-instalar-docker-en-ubuntu-server-20-04-22-04/

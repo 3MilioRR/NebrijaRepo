@@ -1,0 +1,48 @@
+
+
+INSTALACIÓN BASE
+
+**********************************************
+- Install pip
+
+sudo apt update
+sudo apt install python3-pip
+- comprobar
+pip3 --version
+
+*********************************************
+- Install git
+sudo apt install git
+--- sudo apt install python3-pip (ya hecho)
+
+
+*********************************************
+- Install npm
+
+
+
+
+
+*********************************************
+- (Previo a imgHide)
+pip install termcolor
+pip install pyfiglet
+pip install rich
+
+# añadir directorio al PATH
+# editar el fichero .bashrc 
+nano /home/antonio/.bashrc
+
+#añadir al final (si no existye la variable PATH o EXPORT
+export PATH=$PATH:/home/antonio/.local/bin
+
+
+*************************************
+paquetes instalados
+- John the Ripper (cmd)
+- Exiftools (vía programas)
+- Steghide (cmd)
+
+Chrome - Extension
+- Captura de página completa - FireShot
+ 

@@ -1,0 +1,47 @@
+
+INSTALACION DE HERRAMIENTAS SOCMINT
+
+*****************************************************
+SHERLOCK
+Hunting down social media accounts by username across social networks
+https://github.com/sherlock-project/sherlock
+
+# clone the repo
+git clone https://github.com/sherlock-project/sherlock.git tools/sherlock
+
+# change the working directory to sherlock
+cd tools/sherlock
+
+# install the requirements
+python3 -m pip install -r requirements.txt
+
+
+
+# añadir directorio al PATH
+# editar el fichero .bashrc 
+nano /home/antonio/.bashrc
+
+#añadir al final (si no existye la variable PATH o EXPORT
+export PATH=$PATH:/home/antonio/.local/bin
+
+
+*****************************************************
+SOCIAL ANALIZER
+Web App (tambien CLI, API) for analyzing & finding a person's profile across +1000 social media \ websites. 
+It includes different analysis and detection modules, and you can choose which modules to use during the investigation process.
+https://github.com/qeeqbox/social-analyzer
+
+# instalacion
+sudo apt-get update
+#Dependiendo de la distribuciçó de linux, esto podría ser necng on your Linux distro, you may or may not need these 2 lines
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common
+sudo add-apt-repository ppa:mozillateam/ppa -y
+sudo apt-get install -y firefox-esr tesseract-ocr git nodejs npm
+git clone https://github.com/qeeqbox/social-analyzer.git tools/socanalyzer
+cd tools/socanalyzer
+npm update
+npm install
+npm install loadash
+npm start
+
+

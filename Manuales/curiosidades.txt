@@ -1,0 +1,16 @@
+Comandos divertidos
+
+corto cinematográfico de la "Guerra de las galaxias" en código ASCII en el puerto telnet (:23) de un  servidor 
+telnet towel.blinkenlights.nl
+
+comandos
+La suma de los comandos time y cat se puede utilizar a modo de cronómetro.
+time cat
+
+El Comando 'yes' seguirá mostrando su texto por n veces, hasta que usted intervenga para detenerlo (CTRL + C)
+yes
+
+
+sRevive la experiencia Matrix con la ayuda del comando cmatrix.
+cmatrix
+
