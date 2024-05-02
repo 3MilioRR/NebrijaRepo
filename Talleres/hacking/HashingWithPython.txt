@@ -1,0 +1,17 @@
+Create MD5 Hash-
+import hashlib
+x=str(input("Enter String to Encrypt:"))
+print("Encrypted String is:")
+print(hashlib.md5(x.encode()).hexdigest())
+
+Create SHA1 Hash-
+import hashlib
+x=str(input("Enter String to Encrypt:"))
+print("Encrypted String is:")
+print(hashlib.sha1(x.encode()).hexdigest())
+
+Create SHA256 Hash-
+import hashlib
+x=str(input("Enter String to Encrypt:"))
+print("Encrypted String is:")
+print(hashlib.sha256(x.encode()).hexdigest())
