@@ -31,8 +31,8 @@ nmap –sA 45.33.32.156          <---- Comprobación de Firewall Root
 
 --- PYPHISHER
 
-cd tools/PyPhisher
-python3 pyphisher.py
+cd tools/tphisher
+bash tphisher.sh
 
 
 --- SOCIAL FISH
