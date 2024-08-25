@@ -20,19 +20,12 @@ bash netradar.sh
 
 *****************************************************
 
-PYPHISHER
-Easy to use phishing tool with 77 website templates.
-https://github.com/KasRoudra/PyPhisher
+TPHISHER
+An automated phishing tool with 28 templates. 
+This Tool is made for educational purpose only ! Author will not be responsible for any misuse of this toolkit !
+https://github.com/Tanmay-Tiwaricyber/tphisher
 
-- Instalación
-sudo apt install git python3 python3-pip php openssh-client -y
-git clone https://github.com/KasRoudra/PyPhisher tools/PyPhisher
-cd tools/PyPhisher
-pip3 install -r files/requirements.txt
-
-Run the tool
-python3 pyphisher.py
-
+Referirse a la página para su instalación 
 
 *****************************************************
 
