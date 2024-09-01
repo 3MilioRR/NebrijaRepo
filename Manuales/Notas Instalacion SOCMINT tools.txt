@@ -6,23 +6,13 @@ SHERLOCK
 Hunting down social media accounts by username across social networks
 https://github.com/sherlock-project/sherlock
 
-# clone the repo
-git clone https://github.com/sherlock-project/sherlock.git tools/sherlock
+Para la versión de Kali, la instalación es sencilla
+sudo apt install sherlock
 
-# change the working directory to sherlock
-cd tools/sherlock
+# en entorno PyPI (se recomineda uso de pipx) 
+pipx install sherlock-project
+sherlock --version
 
-# install the requirements
-python3 -m pip install -r requirements.txt
-
-
-
-# añadir directorio al PATH
-# editar el fichero .bashrc 
-nano /home/antonio/.bashrc
-
-#añadir al final (si no existye la variable PATH o EXPORT
-export PATH=$PATH:/home/antonio/.local/bin
 
 
 *****************************************************
