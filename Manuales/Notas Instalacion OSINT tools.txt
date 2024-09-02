@@ -12,6 +12,16 @@ python3 -m pip install -r requirements/base.txt
 python3 -m pip install -r requirements/dev.txt
 python3 theHarvester.py -h
 
+****************************************************+
+ALFRED RED BIRD - TOOKIE
+Tookie is a advanced OSINT information gathering tool that finds social media accounts based on inputs
+https://github.com/Alfredredbird/tookie-osint
 
-
+git clone https://github.com/alfredredbird/tookie-osint tools/tookie-osint
+cd tools/tookie-osint
+sudo pip3 install -r requirements.txt
+pip install alive-progress
+pip install selenium
+pip install torrequest
+python3 tookie-osint
 
