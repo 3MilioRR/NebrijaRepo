@@ -16,6 +16,7 @@ python3 theHarvester.py -h
 ALFRED RED BIRD - TOOKIE
 Tookie is a advanced OSINT information gathering tool that finds social media accounts based on inputs
 https://github.com/Alfredredbird/tookie-osint
+Opciones: https://github.com/Alfredredbird/tookie-osint/wiki/Usage---Options
 
 git clone https://github.com/alfredredbird/tookie-osint tools/tookie-osint
 cd tools/tookie-osint
