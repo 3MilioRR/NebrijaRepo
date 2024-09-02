@@ -3,15 +3,12 @@
 ****************************************************+
 THE HARVESTER
 
-- instalación
-git clone https://github.com/laramies/theHarvester tools/theHarvester
-cd tools/theHarvester
-python3 -m pip install -r requirements/base.txt
-python3 -m pip install -r requirements/dev.txt
-python3 theHarvester.py -h
-
-- ejecución
 python3 theHarvester.py -d nebrija.es -b all
 python3 theHarvester.py -d nebrija.es -b all -f info_nebrija
 
 ***************************************************
+ALFRED RED BIRD - TOOKIE
+cd tools/tookie-osint
+python3 tookie-osint
+target: ID_Usuario
+ejemplo1: -f -a -s
