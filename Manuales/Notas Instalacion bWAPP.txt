@@ -1,13 +1,19 @@
-<h2 tabindex="-1" class="heading-element">Installing bWAPP on Kali Linux &amp; Ubuntu</h2>
 
-h3 tabindex="-1" class="heading-element" dir="auto">Download bWAPP from the Official Website</h3>
-<ol dir="auto">
-<li>Go to <a href="http://www.itsecgames.com/download.htm" rel="nofollow">bWAPP download page</a>.</li>
-<li>Click on "You can download bWAPP from here" to go to the download server.</li>
-<li>Click on "Download Latest Version".</li>
-</ol>
+INSTALACION DE BWAPP EN KALI LINUX
 
-Update Your System
+**********************************************
+
+Descargar bWAPP del respositorio oficial
+URL: <a href="http://www.itsecgames.com/download.htm"> bWAPP download page </a>
+Click en "You can download bWAPP from here" to go to the download server.
+Click en "Download Latest Version".
+
+-- ¡Warning! --
+Es muy posible que la web te avise que el software contiene malware: Ignorar (es un  anuncio lógico teniendo en cuenta que es una web vulnerable). 
+
+
+************************************************
+Como siempre, antes actualia zar el sistema
 
 sudo apt-get update -y
 
