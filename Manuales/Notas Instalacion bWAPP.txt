@@ -109,7 +109,25 @@ Login credentials:
 
 https://github.com/ahmedhamdy0x/bwapp-Installation?tab=readme-ov-file
 
-*****************************************************+
 
+*****************************************************+
+# TROUBLE SHOOTING bWAPP BLANK PAGE ERROR
+
+# open terminal
+
+sudo service apache2 start
+sudo service mysql start
+sudo mysql
+
+# en el prompt de Maria db
+    show databases;
+    create database bWAPP;
+    exit;
+
+sudo service mysql restart
+http://127.0.0.1/bWAPP/install.php  // Instalar
+
+
+https://medium.com/@sushantsalunke144/bwapp-blank-error-solve-a7713adea92a
 
 
