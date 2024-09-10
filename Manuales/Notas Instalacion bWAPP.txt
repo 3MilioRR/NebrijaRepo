@@ -13,7 +13,7 @@ Es muy posible que la web te avise que el software contiene malware: Ignorar (es
 
 
 ************************************************
-# Como siempre, antes actualia zar el sistema
+# Como siempre, antes actualizar el sistema
 sudo apt-get update -y
 
 # Preparar el entorno
@@ -21,9 +21,13 @@ cd ~/Downloads
 
 # Crear un directorio temporal y descomprimir el fichero descargado:
 mkdir temp
-cd tempo
+cd temp
 unzip bWAPPv2.2.zip   // o el nombre del fichero descargado
-
+chmod 777 bWAPP/     //Da permisos al directorio bWAPP
+cd bWAPP 
+chmod 777 passwords/     //Dar permisos a estos directorios
+chmod 777 images/
+chmod 777 documents/
 
 *************************************************
 # Preparar la Base de Datos MySQL
@@ -49,90 +53,57 @@ Q para salir
 
 
 *************************************************
-Preparar bWAPP
-
-cd temp    // Navegar al directorio donde hemos descomprimido bWAPP
-chmod 777 bWEAPP/     //Da permisos al directorio bWAPP
-cd bWAPP 
-Give all permissions to these directories:
-
-chmod 777 passwords/
-chmod 777 images/
-chmod 777 documents/
-
-Configure MySQL
-Open MySQL to add a user and give privileges:
+# Configurar MySQL
+# Abrir MySQL, generar un usuario admin y darle privilegos
 
 sudo mysql
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'abc123';     // Es un entorno local de pruebas 
+GRANT ALL PRIVILEGES ON bWAPP.* TO 'admin'@'localhost';    // Conceder privilegios al usuario creado
+FLUSH PRIVILEGES;    // aplica cambios:
+exit    // para salir de MySQL
 
-Create a user (replace ahmed and pass123 with your desired username and password):
 
-CREATE USER 'ahmed'@'localhost' IDENTIFIED BY 'pass123';
+************************************************
+# Configurar bWAPP para acceder a la base de datos
 
-Grant privileges to the user you created:
+# Navegar al directorio Downloads/temp/bWAPP
+# Editar el fichero admin/settings.php 
 
-GRANT ALL PRIVILEGES ON bWAPP.* TO 'ahmed'@'localhost';
+nano admin/settings.php
+  db_username = "admin";    // Cambiar usuario con el mismo nombre que la Base de datosD
+  db_password = "pass123";    // la password tambien debe coincidir
+# Salvar cambios (Ctrl + O) y salir del fichero (Ctrl + X)
 
-Apply the changes immediately:
+# edit el fichero install.php:
+nano install.php
 
-FLUSH PRIVILEGES;
+# localizar esta linea y quitarle el símbolo de admiración
 
-Exit MySQL:
+# Salvar cambios (Ctrl + O) y salir del fichero (Ctrl + X)
 
-exit
-
-Edit bWAPP Database Credentials
-Edit the settings.php file:
-
-mousepad admin/settings.php
-
-Change root to the same username you created in MySQL:
-
-$db_username = "ahmed";
-
-Add the same password you created in MySQL:
-
-$db_password = "pass123";
-
-    Save changes (Ctrl + S), and close the file.
-
-Important Step
-Go to this link and copy the content (Ctrl + C).
-Edit install.php:
-
-mousepad install.php
-
-    Select all (Ctrl + A), paste the copied content (Ctrl + V), save changes (Ctrl + S), and close the file.
-
-Move bWAPP Files to Local Server
-Navigate to the parent directory:
-
-cd ../
-
-Move all bWAPP files to the local server:
-
+# Mover toda la aplicación al servidor web Apache bWAPP 
+cd ../    //Nos debería situar en el directorio /Download/temp. Asesurarse ejecutando pwd
 sudo mv * /var/www/html/
 
-Install bWAPP Database
 
-    Open the following link in your browser and click to install the database: http://localhost/bWAPP/install.php
+***************************************************
+# Instalar bWAPP
+# Abrir un navegador y acceder a la URL: 
+http://localhost/bWAPP/install.php
 
-Verify Database Installation
-Open MySQL to check if the database has been added:
-
+# Verificar la instalación de la base de datos
 sudo mysql
+SHOW DATABASES;    // muestra las bases de datos existentes
+exit    // para salir de MySQL:
 
-Show databases:
 
-SHOW DATABASES;
+****************************************************
+# bWAPP login
 
-Exit MySQL:
+http://localhost/bWAPP/
 
-exit
-
-Login to bWAPP
-
-    Go to http://localhost/bWAPP/
-    Login credentials:
+Login credentials:
         Username: bee
         Password: bug
+
+
