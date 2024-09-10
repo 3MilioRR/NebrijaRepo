@@ -1,0 +1,184 @@
+<h2 tabindex="-1" class="heading-element">Installing bWAPP on Kali Linux &amp; Ubuntu</h2>
+
+h3 tabindex="-1" class="heading-element" dir="auto">Download bWAPP from the Official Website</h3>
+<ol dir="auto">
+<li>Go to <a href="http://www.itsecgames.com/download.htm" rel="nofollow">bWAPP download page</a>.</li>
+<li>Click on "You can download bWAPP from here" to go to the download server.</li>
+<li>Click on "Download Latest Version".</li>
+</ol>
+
+Update Your System
+
+sudo apt-get update -y
+
+Prepare the Environment
+Go to the downloads directory:
+
+cd ~/Downloads
+
+Create a new directory named bwapp:
+
+mkdir bwapp
+
+List the downloads directory contents:
+
+ls
+
+Move the bWAPP zip file to the bwapp directory:
+
+mv bWAPPv2.2.zip bwapp
+
+Navigate to the bwapp directory:
+
+cd bwapp
+
+Extract bWAPP
+Unzip the bWAPP zip file:
+
+unzip bWAPPv2.2.zip
+
+Remove the bWAPP zip file:
+
+rm bWAPPv2.2.zip
+
+Install MySQL
+Check if MySQL is installed:
+
+mysql -V
+
+Update the system before installation:
+
+sudo apt-get update -y
+
+Install MySQL if not installed:
+
+sudo apt install mysql-server
+
+Start MySQL:
+
+sudo systemctl start mysql
+
+Enable MySQL on startup:
+
+sudo systemctl enable mysql
+
+Check MySQL status:
+
+sudo systemctl status mysql
+
+    Press Q to exit.
+
+Install Apache2
+Check if Apache2 is installed:
+
+apache2 -v
+
+Update the system before installation:
+
+sudo apt-get update -y
+
+Install Apache2 if not installed:
+
+sudo apt install apache2
+
+Start Apache2:
+
+sudo systemctl start apache2
+
+Enable Apache2 on startup:
+
+sudo systemctl enable apache2
+
+Check Apache2 status:
+
+sudo systemctl status apache2
+
+    Press Q to exit.
+
+Prepare bWAPP
+Navigate to the bWAPP directory:
+
+cd bWAPP
+
+Give all permissions to these directories:
+
+chmod 777 passwords/
+chmod 777 images/
+chmod 777 documents/
+
+Configure MySQL
+Open MySQL to add a user and give privileges:
+
+sudo mysql
+
+Create a user (replace ahmed and pass123 with your desired username and password):
+
+CREATE USER 'ahmed'@'localhost' IDENTIFIED BY 'pass123';
+
+Grant privileges to the user you created:
+
+GRANT ALL PRIVILEGES ON bWAPP.* TO 'ahmed'@'localhost';
+
+Apply the changes immediately:
+
+FLUSH PRIVILEGES;
+
+Exit MySQL:
+
+exit
+
+Edit bWAPP Database Credentials
+Edit the settings.php file:
+
+mousepad admin/settings.php
+
+Change root to the same username you created in MySQL:
+
+$db_username = "ahmed";
+
+Add the same password you created in MySQL:
+
+$db_password = "pass123";
+
+    Save changes (Ctrl + S), and close the file.
+
+Important Step
+Go to this link and copy the content (Ctrl + C).
+Edit install.php:
+
+mousepad install.php
+
+    Select all (Ctrl + A), paste the copied content (Ctrl + V), save changes (Ctrl + S), and close the file.
+
+Move bWAPP Files to Local Server
+Navigate to the parent directory:
+
+cd ../
+
+Move all bWAPP files to the local server:
+
+sudo mv * /var/www/html/
+
+Install bWAPP Database
+
+    Open the following link in your browser and click to install the database: http://localhost/bWAPP/install.php
+
+Verify Database Installation
+Open MySQL to check if the database has been added:
+
+sudo mysql
+
+Show databases:
+
+SHOW DATABASES;
+
+Exit MySQL:
+
+exit
+
+Login to bWAPP
+
+    Go to http://localhost/bWAPP/
+    Login credentials:
+        Username: bee
+        Password: bug
