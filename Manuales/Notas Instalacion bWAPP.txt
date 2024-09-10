@@ -3,7 +3,7 @@ INSTALACION DE BWAPP EN KALI LINUX
 
 **********************************************
 
-Descargar bWAPP del respositorio oficial
+# Descargar bWAPP del respositorio oficial
 URL: <a href="http://www.itsecgames.com/download.htm"> bWAPP download page </a>
 Click en "You can download bWAPP from here" to go to the download server.
 Click en "Download Latest Version".
@@ -13,99 +13,47 @@ Es muy posible que la web te avise que el software contiene malware: Ignorar (es
 
 
 ************************************************
-Como siempre, antes actualia zar el sistema
-
+# Como siempre, antes actualia zar el sistema
 sudo apt-get update -y
 
-Prepare the Environment
-Go to the downloads directory:
-
+# Preparar el entorno
 cd ~/Downloads
 
-Create a new directory named bwapp:
+# Crear un directorio temporal y descomprimir el fichero descargado:
+mkdir temp
+cd tempo
+unzip bWAPPv2.2.zip   // o el nombre del fichero descargado
 
-mkdir bwapp
 
-List the downloads directory contents:
+*************************************************
+# Preparar la Base de Datos MySQL
 
-ls
+mysql -V  // Comprobar si MySQL está instalada
+    sudo apt install mysql-server // Instalar MySQL si no lo estuviera 
 
-Move the bWAPP zip file to the bwapp directory:
+sudo systemctl start mysql    // arranca mysql
+sudo systemctl enable mysql    // habilita MySQL en el arranque:
+sudo systemctl status mysql    // checkea el stado de MySQL 
+Q para salir.
 
-mv bWAPPv2.2.zip bwapp
+*************************************************
+# Prepartar instalación de servior web Apache2
 
-Navigate to the bwapp directory:
+apache2 -v    // comprueba si Apache2 está instalado
+    sudo apt install apache2    // Instala Apache2 si no lo estuviera
 
-cd bwapp
+sudo systemctl start apache2    // arranca Apache2:
+sudo systemctl enable apache2    // habilita Apache2 en el arrnaque
+sudo systemctl status apache2    // checkea el estado de Apache2
+Q para salir
 
-Extract bWAPP
-Unzip the bWAPP zip file:
 
-unzip bWAPPv2.2.zip
+*************************************************
+Preparar bWAPP
 
-Remove the bWAPP zip file:
-
-rm bWAPPv2.2.zip
-
-Install MySQL
-Check if MySQL is installed:
-
-mysql -V
-
-Update the system before installation:
-
-sudo apt-get update -y
-
-Install MySQL if not installed:
-
-sudo apt install mysql-server
-
-Start MySQL:
-
-sudo systemctl start mysql
-
-Enable MySQL on startup:
-
-sudo systemctl enable mysql
-
-Check MySQL status:
-
-sudo systemctl status mysql
-
-    Press Q to exit.
-
-Install Apache2
-Check if Apache2 is installed:
-
-apache2 -v
-
-Update the system before installation:
-
-sudo apt-get update -y
-
-Install Apache2 if not installed:
-
-sudo apt install apache2
-
-Start Apache2:
-
-sudo systemctl start apache2
-
-Enable Apache2 on startup:
-
-sudo systemctl enable apache2
-
-Check Apache2 status:
-
-sudo systemctl status apache2
-
-    Press Q to exit.
-
-Prepare bWAPP
-Navigate to the bWAPP directory:
-
-cd bWAPP
-
+cd temp    // Navegar al directorio donde hemos descomprimido bWAPP
+chmod 777 bWEAPP/     //Da permisos al directorio bWAPP
+cd bWAPP 
 Give all permissions to these directories:
 
 chmod 777 passwords/
