@@ -19,15 +19,16 @@ sudo apt-get update -y
 # Preparar el entorno
 cd ~/Downloads
 
-# Crear un directorio temporal y descomprimir el fichero descargado:
-mkdir temp
-cd temp
+# Mover o Eliminar todos los ficheros excepto el zip 
+# Decomprimir el fichero descargado:
 unzip bWAPPv2.2.zip   // o el nombre del fichero descargado
 chmod 777 bWAPP/     //Da permisos al directorio bWAPP
 cd bWAPP 
 chmod 777 passwords/     //Dar permisos a estos directorios
 chmod 777 images/
 chmod 777 documents/
+
+# Mover oeliminar el fichero .zip
 
 *************************************************
 # Preparar la Base de Datos MySQL
@@ -66,23 +67,25 @@ exit    // para salir de MySQL
 ************************************************
 # Configurar bWAPP para acceder a la base de datos
 
-# Navegar al directorio Downloads/temp/bWAPP
+# Navegar al directorio Downloads/bWAPP
 # Editar el fichero admin/settings.php 
 
 nano admin/settings.php
   db_username = "admin";    // Cambiar usuario con el mismo nombre que la Base de datosD
-  db_password = "pass123";    // la password tambien debe coincidir
+  db_password = "abc123";    // la password tambien debe coincidir
 # Salvar cambios (Ctrl + O) y salir del fichero (Ctrl + X)
 
 # edit el fichero install.php:
 nano install.php
 
-# localizar esta linea y quitarle el símbolo de admiración
-
+# localizar esta linea (40) y quitarle el símbolo de admiración delante de mysql
+if(!mysqli_select_db($link,"bWAPP"))
 # Salvar cambios (Ctrl + O) y salir del fichero (Ctrl + X)
 
 # Mover toda la aplicación al servidor web Apache bWAPP 
-cd ../    //Nos debería situar en el directorio /Download/temp. Asesurarse ejecutando pwd
+# Moverse al directorio /Download  
+# Asegurarse ejecutando pwd
+
 sudo mv * /var/www/html/
 
 
