@@ -34,3 +34,13 @@ mas ayuda y comandos de docker
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
 https://kinsta.com/es/blog/instalar-docker-ubuntu/
 https://diarioprogramador.com/como-instalar-docker-en-ubuntu-server-20-04-22-04/
+
+last: 
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+--- troubleshooting
+error:
+"Las firmas siguientes no se pudieron verificar porque su clave pública no está disponible: NO_PUBKEY 7EA0A9C3F273FCD8"
+solución:
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+
