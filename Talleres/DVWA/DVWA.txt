@@ -54,7 +54,7 @@ uso peligroso: subir una shell.php
 
 - XSS persistente
 probamos que es explotable
-<script> alert("Vulneravilidad low")</script>
+<script> alert("Vulnerabilidad low")</script>
 <script>window.open("https://google.es")</script>
 
 - COMMAND INJECTION
