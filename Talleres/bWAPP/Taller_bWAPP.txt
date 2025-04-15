@@ -77,6 +77,8 @@ comprobar en un a consola
 https://writeups.kunull.net/bWAPP/
 https://infosecwriteups.com/bwapp-html-injection-reflected-url-5dacf7f6d942
 
+---- WRITEUPs --------------------
+https://github.com/srikarsharan097/bWAPP-Solutions/blob/master/README.md
 
 
 ************* EXTRAS ***************************
