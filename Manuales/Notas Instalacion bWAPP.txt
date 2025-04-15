@@ -136,7 +136,7 @@ https://medium.com/@sushantsalunke144/bwapp-blank-error-solve-a7713adea92a
 
 ********** bWAPP en DOCKER ****************************
 https://hub.docker.com/r/hackersploit/bwapp-docker
-
+- Docker instalado
 - Pull the Docker image: 
 docker pull hackersploit/bwapp-docker
 - Running the bWAPP container
