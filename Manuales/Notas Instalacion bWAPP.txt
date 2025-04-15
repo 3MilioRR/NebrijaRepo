@@ -134,3 +134,14 @@ http://127.0.0.1/bWAPP/install.php  // Instalar
 https://medium.com/@sushantsalunke144/bwapp-blank-error-solve-a7713adea92a
 
 
+********** bWAPP en DOCKER ****************************
+https://hub.docker.com/r/hackersploit/bwapp-docker
+
+- Pull the Docker image: 
+docker pull hackersploit/bwapp-docker
+- Running the bWAPP container
+docker run -d -p 80:80 hackersploit/bwapp-docker
+Installing bWAPP
+After running the image, navigate to http://127.0.0.1/install.php⁠ to complete the bWAPP setup process.
+
+
