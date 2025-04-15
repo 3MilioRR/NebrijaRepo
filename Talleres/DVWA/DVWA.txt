@@ -66,6 +66,10 @@ Testeando la web shell: http://127.0.0.1/vulnerabilities/exec/web_shell.php?cmd=
 cambiar el vomando cmd al gusto
 
 WriteUps
-https://github.com/dev-angelist/Writeups-and-Walkthroughs/blob/main/dvwa/command-injection.md
+https://github.com/dev-angelist/Writeups-and-Walkthroughs/blob/main/dvwa
+https://github.com/LeonardoE95/DVWA
+https://www.linkedin.com/pulse/command-injection-dvwa-series-nguyen-nguyen
+https://4g3nt47.github.io/categories/dvwa/
+
 
 
