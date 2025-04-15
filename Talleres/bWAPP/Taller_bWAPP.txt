@@ -52,7 +52,7 @@ Pero podemos descubrirlo en el código fuente
 
 ------  OS Command Injection -Blind
 Here we enter a os command to get a net cat session in the attacker machine.
-
+www.nsa.gov | sleep 10
 
 ------  Session Mgmt. - Administrative Portals
 La página está bloqueada, pero mira en la URL XD
@@ -83,7 +83,14 @@ https://infosecwriteups.com/bwapp-html-injection-reflected-url-5dacf7f6d942
 1
 This post contains the steps to get a root shell with bWapp VM: https://paulsec.github.io/posts/bwapp-write-up/
 
+2 
+Useful info for payload from owasp,
+    cmd1 | cmd2 : Uses of | will make command 2 to be executed weather command 1 execution is successful or not.
+    cmd1 ; cmd2 : Uses of ; will make command 2 to be executed weather command 1 execution is successful or not.
+    cmd1 || cmd2 : Command 2 will only be executed if command 1 execution fails.
+    cmd1 && cmd2 : Command 2 will only be executed if command 1 execution succeeds.
 
+3
 https://www.hackplayers.com/2017/06/diseccionando-bwapp-html-injection.html
 captura de página de login e inyección en los campos del formulario
 user:
