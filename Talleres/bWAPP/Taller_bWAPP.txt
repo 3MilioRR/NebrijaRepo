@@ -1,0 +1,14 @@
+ --- HACKING WEB
+
+ --- bWAPP ----------------
+# buggy Web APPlication
+
+para arrancar bWAPP
+abrir una consola / terminal de comandos.
+copiar y pegar:
+docker run -d -p 80:80 hackersploit/bwapp-docker
+
+para visualizar bWAPP
+arrancar un navegador y teclear
+localhost:80
+
