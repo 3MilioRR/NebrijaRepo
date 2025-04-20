@@ -1,0 +1,5 @@
+
+sitios hechos específicamente para ser escaneados por escáneres web
+http://testasp.vulnweb.com/
+https://demo.testfire.net/
+http://zero.webappsecurity.com/ 
