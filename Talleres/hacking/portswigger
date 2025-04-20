@@ -1,0 +1,92 @@
+
+
+----- PATH TRAVERSAL --------------------
+1
+File path traversal, simple case
+- https://portswigger.net/web-security/file-path-traversal/lab-simple
+-Retrieve the contents of the /etc/passwd file.
+Interceptar y modificar el request usando 'Repeater' 
+../../../etc/passwd
+
+2
+File path traversal, traversal sequences blocked with absolute path bypass
+https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass
+servidor protege escalado del path
+/etc/passwd
+
+3
+File path traversal, traversal sequences stripped non-recursively
+https://portswigger.net/web-security/file-path-traversal/lab-sequences-stripped-non-recursively
+el 'truco': ....//
+más: ..././..././..././
+
+[Una entrada del archivo /etc/passwd tiene el formato siguiente:
+Nombre:Contraseña: UserID:PrincipleGroup:Gecos: HomeDirectory:Shell]
+
+
+----- Business logic vulnerabilities ------------------
+credentials: wiener/ peter
+1 
+Excessive trust in client-side controls
+https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-excessive-trust-in-client-side-controls
+intercepta "add to cart" / modifica precio / consulta carrito / Place Order  
+
+2
+High-level logic vulnerability
+https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-high-level
+    -añade un producto a la cesta
+    -Ir a la cesta e interceptar tráfico
+    -Reduce la cantidad del producto: parameter quantity=-1
+    -Elimina 13, 14, .. se trata de que 'te devuelvan' una cantidad entre el valor de la chaqueta + 100 (tu crédito) 
+    -Añade la chaqueta a la cesta 
+    -Compra
+
+3
+Inconsistent security controls
+https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-inconsistent-security-controls
+delete the user carlos.
+    -Probar directorio /admin
+    -Registrarse (usar el boton de mail-cliente para la cuenta de correo)  
+    -Confirmar registro y acceder.
+    -Actualizar la direccion de correo con dominio @dontwannacry.com
+    -liberado el panel de admin, borrar a Carlos
+
+4 
+Flawed enforcement of business rules
+https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-flawed-enforcement-of-business-rules
+    -nuevos clientes tienen derecho a descuento. Alta en newsletter tambien
+    -obten ambos códigos
+	NEWCUST5
+	SIGNUP30
+    -aplícalos sin pena
+
+
+----- Access control vulnerabilities -------------------------
+1
+Unprotected admin functionality
+https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality
+Ojo con los ficheros robots.txt
+
+2
+Unprotected admin functionality with unpredictabl
+https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality-with-unpredictable-url
+Ojo con dejar cosas escritas en el código de la página
+
+3
+User role controlled by request parameter
+https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter
+    - Comprobar que no hay acceso al directorio /admin
+    - Acceder a la página de login.
+    - Interceptar la petición y el Responder.
+    - Acceder wiener/peter 
+    - Observar que la respuesta trae la cookie Admin=false. Cambiarla a true
+    - Cargar el panel de administración y borrar a Carlos.
+
+
+
+
+
+
+
+
+8R238b+fd?9?5-3EW;4w**(8+\cc)N7"
