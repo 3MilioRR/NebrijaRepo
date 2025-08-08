@@ -38,6 +38,7 @@ bash tphisher.sh
 --- SOCIAL FISH
 - tutorial: https://www.linkedin.com/pulse/creating-phishing-campaign-socialfish-ngrok-fun-mark-roenicke
 cd tools/SocialFish
+source venv/bin/activate
 python3 SocialFish.py antonio qwerty
 http://127.0.0.1:5000/neptune
 
@@ -45,6 +46,8 @@ Ejemplo
 Clone: https://es.linkedin.com/
 Redirection: https://es.linkedin.com/
 
+- para salir del entorno virtual 
+deactivate
 
 --- JOHN THE RIPPER
 
