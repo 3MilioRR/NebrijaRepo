@@ -35,7 +35,7 @@ rm -r dist
 
 
 ***************************************************+
-ALFRED RED BIRD - TOOKIE
+ALFRED RED BIRD - TOOKIE (2025 error)
 Tookie is a advanced OSINT information gathering tool that finds social media accounts based on inputs
 TOOL: https://github.com/Alfredredbird/tookie-osint
 WIKI: https://github.com/alfredredbird/tookie-osint/wiki
