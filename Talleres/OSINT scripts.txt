@@ -6,6 +6,13 @@ THE HARVESTER
 python3 theHarvester.py -d nebrija.es -b all
 python3 theHarvester.py -d nebrija.es -b all -f info_nebrija
 
+
+****************************************************+
+H4X-TOOLS
+lanzar desde el prompt
+h4xtools
+
+
 ***************************************************
 ALFRED RED BIRD - TOOKIE
 cd tools/tookie-osint
