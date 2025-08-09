@@ -12,7 +12,29 @@ python3 -m pip install -r requirements/base.txt
 python3 -m pip install -r requirements/dev.txt
 python3 theHarvester.py -h
 
+
 ****************************************************+
+H4X-TOOLS
+Open source toolkit for scraping, OSINT and more.
+https://github.com/vil/H4X-Tools
+
+# instalación
+git clone https://github.com/vil/h4x-tools.git tools/h4x-tools
+cd tools/h4x-tools
+echo "Creating virtual environment..."
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+# Building H4X-Tools to a single executable..
+pyinstaller h4xtools.py --add-data "resources/*:resources" --onefile -F --clean
+chmod +x dist/h4xtools
+sudo mv dist/h4xtools /usr/local/bin/
+rm h4xtools.spec
+rm -r build
+rm -r dist
+
+
+***************************************************+
 ALFRED RED BIRD - TOOKIE
 Tookie is a advanced OSINT information gathering tool that finds social media accounts based on inputs
 TOOL: https://github.com/Alfredredbird/tookie-osint
