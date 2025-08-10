@@ -37,6 +37,7 @@ paquetes pre-instalados
 - Exiftools (vía programas)
 - Steghide (cmd)
 - whatweb (cmd)
+- amass (cmd)
 
 Chrome - Extension
 - Captura de página completa - FireShot
