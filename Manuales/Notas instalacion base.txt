@@ -21,13 +21,7 @@ sudo apt install git
 
 
 
-
-
 *********************************************
-- (Previo a imgHide)
-pip install termcolor
-pip install pyfiglet
-pip install rich
 
 # añadir directorio al PATH
 # editar el fichero .bashrc 
