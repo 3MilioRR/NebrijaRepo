@@ -5,10 +5,13 @@
 git clone https://github.com/teja156/imghide tools/imghide
 cd tools/imghide
 #crear el entorno virtual
+python3 -m venv venv
+source venv/bin/activate
 pip install termcolor
 pip install pyfiglet
 pip install rich
 pip install -r requirements.txt
+
 
 *****************************************************
   STEGHIDE
