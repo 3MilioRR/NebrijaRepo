@@ -8,6 +8,7 @@ WHATWEB
 #ejecución
 whatweh -h
 whatweb nombre-de-dominio
+whatweb example.com
 whatweb ttx.es
 
 
