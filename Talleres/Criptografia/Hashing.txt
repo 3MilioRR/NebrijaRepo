@@ -1,0 +1,21 @@
+
+--- Calcular el HASH de una cadena de caracteres (por ejemplo para almacenar passwords)
+
+echo -n "Hola, mundo" | sha256sum
+echo -n "Contraseña segura" | md5sum
+
+¿echo? Si, La clave está en usar la opción -n con echo para evitar un salto de línea final, y luego canalizar la salida a la herramienta de hashing deseada. 
+
+--- Calcular el HASH de un fichero
+# Sintaxis del comando:
+sha256sum <nombre_del_archivo>
+md5sum <nombre_del_archivo> 
+
+--- Práctica
+Calcular el hash de un fichero de texto dado
+Volver a calcularlo y ver que coincide
+Mooificar 'imerceptiblemente' el fichero, calcular el Hash y ver que es diferente.
+
+Sitios para clacular HASH online
+- https://emn178.github.io/online-tools/
+- https://hash.online-convert.com/es/generador-md5
