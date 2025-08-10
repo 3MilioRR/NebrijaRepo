@@ -1,0 +1,13 @@
+
+--- RECONOCIMIENTO
+
+
+------------------------------------------
+WHATWEB
+
+#ejecución
+whatweh -h
+whatweb nombre-de-dominio
+whatweb ttx.es
+
+
