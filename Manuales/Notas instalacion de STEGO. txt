@@ -4,6 +4,10 @@
 - instalación
 git clone https://github.com/teja156/imghide tools/imghide
 cd tools/imghide
+#crear el entorno virtual
+pip install termcolor
+pip install pyfiglet
+pip install rich
 pip install -r requirements.txt
 
 *****************************************************
