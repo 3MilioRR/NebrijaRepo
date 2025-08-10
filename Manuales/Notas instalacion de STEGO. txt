@@ -11,6 +11,7 @@ pip install termcolor
 pip install pyfiglet
 pip install rich
 pip install -r requirements.txt
+python3 imghide.py
 
 
 *****************************************************
