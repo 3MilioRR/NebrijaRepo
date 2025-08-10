@@ -1,33 +1,45 @@
-*** actualizar lista de paquetes
+
+INSTALACIÓN DE DOCKER EN KALI LINUX
+https://hackunderway.com/instalacion-de-docker-en-kali-linux/
+
+*** 1 actualizar lista de paquetes
+sudo apt update && sudo apt upgrade -y
+
+*** 2 instalar dependenciias necesarias
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
+
+*** 3 instala clave GPG oficial de Docker
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+*** 4 Agregue el repositorio de Docker a las fuentes de APT:
+echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+https://download.docker.com/linux/debian bullseye stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+*** 5 instalar docker engine
 sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io -y
 
-*** instalar requisitos previos
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+*** 6 habilita e inicia el servicio de Docker
+sudo systemctl enable docker
+sudo systemctl start docker
 
-*** instala cert GPG (deprecado) curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-*** instala cert - nuevo 
-sudo apt install ca-certificates curl gnupg lsb-release
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
-*** Agregue el repositorio de Docker a las fuentes de APT:
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt update
-
-*** instalar docker
-apt-cache policy docker-ce
-sudo apt install docker-ce docker-ce-cli containerd.io
-sudo systemctl status docker
+*** 7 verifica que funciona
+sudo docker run hello-world
 
 --- para ejecutar docker sin sudo
-sudo usermod -aG docker ${USER}
-su - ${USER}
-id -nG
-sudo usermod -aG docker antonio
+sudo usermod -aG docker $USER
+newgrp docker
+o
+   sudo usermod -aG docker ${USER}
+   su - ${USER}
+   id -nG
+   sudo usermod -aG docker antonio
 
 --- instalar docker compose
 sudo apt install docker-compose-plugin
+
+
 
 mas ayuda y comandos de docker
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
