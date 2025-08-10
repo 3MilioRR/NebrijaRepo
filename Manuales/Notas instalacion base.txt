@@ -38,10 +38,11 @@ export PATH=$PATH:/home/antonio/.local/bin
 
 
 *************************************
-paquetes instalados
+paquetes pre-instalados
 - John the Ripper (cmd)
 - Exiftools (vía programas)
 - Steghide (cmd)
+- whatweb (cmd)
 
 Chrome - Extension
 - Captura de página completa - FireShot
