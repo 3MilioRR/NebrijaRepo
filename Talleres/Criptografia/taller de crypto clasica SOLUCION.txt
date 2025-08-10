@@ -1,0 +1,45 @@
+
+
+TALLER DE CRIPTOGRAFIA
+mas ejemplos aqui: https://github.com/mattnotmax/cyberchef-recipes
+más sistios como ciyberchef: https://www.dcode.fr
+
+
+Decodificar binario
+01001000 01101111 01101100 01100001 00101100 00100000 01101011 01100101 00100000 01100001 01110011 01100101 00111111
+
+Decodificando en HX
+44 65 73 63 75 62 72 65 20 6c 61 20 6d 61 67 69 61 20 64 65 20 6c 61 20 63 72 69 70 74 6f 67 72 61 66 ed 61 0a
+
+
+Decodificar CESAR 13
+Pbzb zr thfgn ab unpre anqn, l yhrtb qrfpnafne
+
+
+Decodificar en base64
+Q29jaW5hbmRvIGNvc2FzIHJpY2FzIGNvbiBDeWJlckNoZWYuLi4=
+
+Baconian cipher
+AABAA ABABA AAAAB AAAAA AAABA ABBAB ABBAA BAAAB AAAAA AAAAB AABAA ABABB AABAA ABAAA ABBAB BAAAA AAABA ABBAB ABBAA AABBB BAABB AABAA BAABB ABBAB BAAAB AABAB BAAAA ABAAA BAABA ABBAB BAAAB
+
+
+Decodificar URL
+https%3A%2F%2Fwww%2Enebrija%2Ees%2F%7Ecmalagon%2Fia%2Ftransparencias%2Fintroduccion%5FIA%2Epdf
+
+
+Decodificar: VIno de GEnova y NEgros REcuerdos invadieron mi ESPIRITU
+Lgai, dm efeed Íñqxw Firldgr, bú fuxshbv i fc tsszv, xkytájpbv i fivag
+
+
+Extraer IP de un fichero (fichero log_apache.txt)
+
+
+Haciendo la receta completa
+ME LO CONTARON Y LO OLVIDE, LO VI Y LO ENTENDI, LO HICE Y LO APRENDI
+ZR YB PBAGNEBA L YB BYIVQR, YB IV L YB RAGRAQV, YB UVPR L YB NCERAQV
+
+--.. .-./-.-- -.../.--. -... .- --. -. . -... .-/.-../-.-- -.../-... -.-- .. ...- --.- .-. --..--/-.-- -.../.. ...-/.-../-.-- -.../.-. .- --. .-. .- --.- ...- --..--/-.-- -.../..- ...- .--. .-./.-../-.-- -.../-. -.-. . .-. .- --.- ...-
+
+tototiti titoti/totitoto totititi/titototi totititi tito tototi toti ti totititi tito/titotiti/totitoto totititi/totititi totitoto titi tititito tototito titoti tototititoto/totitoto totititi/titi tititito/titotiti/totitoto totititi/titoti tito tototi titoti tito tototito tititito tototititoto/totitoto totititi/titito tititito titototi titoti/titotiti/totitoto totititi/toti totitoti ti titoti tito tototito tititito
+
+dG90b3RpdGkgdGl0b3RpL3RvdGl0b3RvIHRvdGl0aXRpL3RpdG90b3RpIHRvdGl0aXRpIHRpdG8gdG90b3RpIHRvdGkgdGkgdG90aXRpdGkgdGl0by90aXRvdGl0aS90b3RpdG90byB0b3RpdGl0aS90b3RpdGl0aSB0b3RpdG90byB0aXRpIHRpdGl0aXRvIHRvdG90aXRvIHRpdG90aSB0b3RvdGl0aXRvdG8vdG90aXRvdG8gdG90aXRpdGkvdGl0aSB0aXRpdGl0by90aXRvdGl0aS90b3RpdG90byB0b3RpdGl0aS90aXRvdGkgdGl0byB0b3RvdGkgdGl0b3RpIHRpdG8gdG90b3RpdG8gdGl0aXRpdG8gdG90b3RpdGl0b3RvL3RvdGl0b3RvIHRvdGl0aXRpL3RpdGl0byB0aXRpdGl0byB0aXRvdG90aSB0aXRvdGkvdGl0b3RpdGkvdG90aXRvdG8gdG90aXRpdGkvdG90aSB0b3RpdG90aSB0aSB0aXRvdGkgdGl0byB0b3RvdGl0byB0aXRpdGl0bw==

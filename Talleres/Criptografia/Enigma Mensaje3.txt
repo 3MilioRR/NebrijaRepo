@@ -1,0 +1,23 @@
+
+Decodificar el mensaje:
+
+tpynm lnrnz wvuaq lelmg yidpz wgbeq dkhlc usupf bgtfj cwemq hwsex uualb qiovd eipzz jvnij atsur rtrpu iumsg ufuhg uswai dttbr ptlqy zvkjk fzcob hmjnn otvzt vrx
+
+
+Modelo: M3 
+Reflector: ????
+
+ROT1.: I
+ROT2.: II 
+ROT3.: III
+
+POS1.: A
+POS2.: B
+POS3.: C
+
+ANILLO1: B 
+ANILLO2: C
+ANILLO3: D
+
+PLUGBOARD: ne br ih ac ks
+

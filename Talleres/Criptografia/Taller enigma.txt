@@ -1,0 +1,37 @@
+El martes resolveremos este reto de criptografía. El enunciado dice así .....
+
+
+Hemos recibido este mensaje junto a unas instrucciones para su manejo.
+Parece un completo enigma.
+
+
+bWF6cXMgbXJibGEgZWdid24gaXFrZHAgam9scmMgcnZnZ20gY3Z1cHggeGpmeWkgeGJ4YnIgbWRmd3MgeWxxYm0gZmlyaXYgdnlxbHEga2t3cWggcGl4Y2ggbWhlcGkgZ3Fua3cgb3hkd28geGd5d2kgemZzaHEgeml0eHggZWZrZWYgdmh4bHYganBwc2sgcnlvZHMgYXdtaw==
+
+
+
+
+Modelo: M3
+Reflector: ????
+
+
+ROT1.: 1
+ROT2.: 2
+ROT3.: 3
+
+
+POS1.: A
+POS2.: B
+POS3.: C
+
+
+ANILLO1: A
+ANILLO2: B
+ANILLO3: C
+
+
+PLUGBOARD: bq cr di ej kw mt os px uz gh
+
+
+Por supuesto, podéis intentarlo y me alegraré que lo resolvais
+Un saludo
+Emilio

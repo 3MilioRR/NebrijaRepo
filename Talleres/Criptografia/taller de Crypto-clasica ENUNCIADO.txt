@@ -1,0 +1,42 @@
+
+
+TALLER DE CRIPTOGRAFIA
+
+
+RECETA 1: Decodificar binario
+01001000 01101111 01101100 01100001 00101100 00100000 01101011 01100101 00100000 01100001 01110011 01100101 00111111
+
+RECETA 2:Decodificando en Hexadecimal
+44 65 73 63 75 62 72 65 20 6c 61 20 6d 61 67 69 61 20 64 65 20 6c 61 20 63 72 69 70 74 6f 67 72 61 66 ed 61 0a
+
+
+RECETA 3: CESAR ROT13
+Pbzb zr thfgn ab unpre anqn, l yhrtb qrfpnafne
+
+
+RECETA 4: Decodificar en base64
+Q29jaW5hbmRvIGNvc2FzIHJpY2FzIGNvbiBDeWJlckNoZWYuLi4=
+
+RECETA 5:El desayuno - Baconian cipher
+AABAA ABABA AAAAB AAAAA AAABA ABBAB ABBAA BAAAB AAAAA AAAAB AABAA ABABB AABAA ABAAA ABBAB BAAAA AAABA ABBAB ABBAA AABBB BAABB AABAA BAABB ABBAB BAAAB AABAB BAAAA ABAAA BAABA ABBAB BAAAB
+
+
+RECETA 6: Decodificar URL
+https%3A%2F%2Fwww%2Enebrija%2Ees%2F%7Ecmalagon%2Fia%2Ftransparencias%2Fintroduccion%5FIA%2Epdf
+
+
+RECETA 7: Decodifica tu mismo: 
+Lgai, dm efeed Íñqxw Firldgr, bú fuxshbv i fc tsszv, xkytájpbv i fivag
+(PISTA: VIno de GEnova y NEgros REcuerdos invadieron mi ESPIRITU)
+
+RECETA 8: Extraer IP de un fichero (fichero log_apache.txt)
+
+
+RECETA 9: Haciendo la receta completa de la cena:
+
+dG90b3RpdGkgdGl0b3RpL3RvdGl0b3RvIHRvdGl0aXRpL3RpdG90b3RpIHRvdGl0aXRpIHRpdG8gdG90b3RpIHRvdGkgdGkgdG90aXRpdGkgdGl0by90aXRvdGl0aS90b3RpdG90byB0b3RpdGl0aS90b3RpdGl0aSB0b3RpdG90byB0aXRpIHRpdGl0aXRvIHRvdG90aXRvIHRpdG90aSB0b3RvdGl0aXRvdG8vdG90aXRvdG8gdG90aXRpdGkvdGl0aSB0aXRpdGl0by90aXRvdGl0aS90b3RpdG90byB0b3RpdGl0aS90aXRvdGkgdGl0byB0b3RvdGkgdGl0b3RpIHRpdG8gdG90b3RpdG8gdGl0aXRpdG8gdG90b3RpdGl0b3RvL3RvdGl0b3RvIHRvdGl0aXRpL3RpdGl0byB0aXRpdGl0byB0aXRvdG90aSB0aXRvdGkvdGl0b3RpdGkvdG90aXRvdG8gdG90aXRpdGkvdG90aSB0b3RpdG90aSB0aSB0aXRvdGkgdGl0byB0b3RvdGl0byB0aXRpdGl0bw==
+
+
+***************
+mas ejemplos aqui: https://github.com/mattnotmax/cyberchef-recipes
+más sitios como ciyberchef: https://www.dcode.fr
