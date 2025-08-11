@@ -7,7 +7,7 @@
 para arrancar DVWA
 abrir una consola / terminal de comandos.
 copiar y pegar:
-docker run --rm -it -p 80:80 vulnerables/web-dvwa
+docker run --rm -it -p 8081:80 vulnerables/web-dvwa
 
 para visualizar DVWA
 arrancar un navegador y teclear
