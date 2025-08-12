@@ -41,7 +41,7 @@ https://github.com/poppopjmp/spiderfoot
 
 git clone https://github.com/poppopjmp/spiderfoot.git tools/spiderfoot
 cd tools/spiderfoot
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python3 sf.py -l 127.0.0.1:5001
@@ -49,6 +49,19 @@ python3 sf.py -l 127.0.0.1:5001
 * Más información para instalar CLI y APIs
 CLI Reference - Command-line interface guide
 API Documentation - REST API reference
+
+
+****************************************************+
+MAIGRET
+Collect a dossier on a person by username from thousands of sites
+https://github.com/soxoj/maigret
+
+git clone https://github.com/soxoj/maigret tools/maigret
+cd tools/maigret
+python -m venv venv
+source venv/bin/activate
+pip3 install .
+maigret username
 
 
 ***************************************************+
