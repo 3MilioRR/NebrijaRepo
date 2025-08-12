@@ -34,6 +34,23 @@ rm -r build
 rm -r dist
 
 
+****************************************************+
+SPIDER FOOT
+SpiderFoot automates OSINT for threat intelligence and mapping your attack surface
+https://github.com/poppopjmp/spiderfoot
+
+git clone https://github.com/poppopjmp/spiderfoot.git tools/spiderfoot
+cd tools/spiderfoot
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 sf.py -l 127.0.0.1:5001
+
+* Más información para instalar CLI y APIs
+CLI Reference - Command-line interface guide
+API Documentation - REST API reference
+
+
 ***************************************************+
 ALFRED RED BIRD - TOOKIE (2025 error)
 Tookie is a advanced OSINT information gathering tool that finds social media accounts based on inputs
