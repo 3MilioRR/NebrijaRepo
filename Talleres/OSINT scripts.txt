@@ -28,6 +28,7 @@ Collect a dossier on a person by username from thousands of sites
 https://github.com/soxoj/maigret
 
 cd tools/maigret
+source venv/bin/activate
 maigret username
 
 # Mejor con el interface web
