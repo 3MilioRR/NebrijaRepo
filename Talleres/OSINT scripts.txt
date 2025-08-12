@@ -22,6 +22,17 @@ Start the server:
 python sf.py -l 127.0.0.1:5001
 
 
+****************************************************+
+MAIGRET
+Collect a dossier on a person by username from thousands of sites
+https://github.com/soxoj/maigret
+
+cd tools/maigret
+maigret username
+
+# Mejor con el interface web
+maigret --web 5000
+http://127.0.0.1:5000 
 
 
 ***************************************************
