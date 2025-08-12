@@ -14,8 +14,8 @@ md5sum <nombre_del_archivo>
 --- Práctica
 Calcular el hash de un fichero de texto dado
 Volver a calcularlo y ver que coincide
-Mooificar 'imerceptiblemente' el fichero, calcular el Hash y ver que es diferente.
+Modificar 'imperceptiblemente' el fichero, calcular el Hash y ver que es diferente.
 
-Sitios para clacular HASH online
+Sitios para calcular HASH online
 - https://emn178.github.io/online-tools/
 - https://hash.online-convert.com/es/generador-md5
