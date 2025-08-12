@@ -13,6 +13,17 @@ lanzar desde el prompt
 h4xtools
 
 
+****************************************************+
+SPIDER FOOT
+SpiderFoot automates OSINT for threat intelligence and mapping your attack surface
+https://github.com/poppopjmp/spiderfoot
+
+Start the server:
+python sf.py -l 127.0.0.1:5001
+
+
+
+
 ***************************************************
 ALFRED RED BIRD - TOOKIE
 cd tools/tookie-osint
