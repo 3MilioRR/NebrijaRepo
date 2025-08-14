@@ -38,6 +38,7 @@ paquetes pre-instalados
 - Steghide (cmd)
 - whatweb (cmd)
 - amass (cmd)
+- photon (cmd)
 
 Chrome - Extension
 - Captura de página completa - FireShot
