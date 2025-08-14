@@ -54,6 +54,17 @@ python3 SocialFish.py user password
 http://127.0.0.1:5000/neptune
 
 
+*****************************************************
+
+PHOTON
+fast and flexible crawler designed for open source intelligence (OSINT).
+https://www.kali.org/tools/photon/
+
+- Instalacion
+sudo apt install photon
+
+
+
 
 
 
