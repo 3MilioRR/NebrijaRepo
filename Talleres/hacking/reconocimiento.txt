@@ -1,7 +1,6 @@
 
 --- RECONOCIMIENTO
 
-
 ------------------------------------------
 WHATWEB
 
@@ -12,4 +11,11 @@ whatweb example.com
 whatweb ttx.es
 whatweb scanme.org
 
+
+------------------------------------------
+PHOTON
+
+#ejecución
+photon -u testphp.vulnweb.com
+photon -u example.com -l 2 -t 2
 
