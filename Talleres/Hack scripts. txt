@@ -31,7 +31,7 @@ nmap –sA 45.33.32.156          <---- Comprobación de Firewall Root
 
 --- CAM-HAWK
 
-cd tools/CamHawk
+cd tools/CamHawk/CamHawk
 bash camhawk.sh
 
 
