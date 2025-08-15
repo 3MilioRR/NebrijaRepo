@@ -54,6 +54,21 @@ python3 SocialFish.py user password
 http://127.0.0.1:5000/neptune
 
 
+
+*****************************************************
+
+CAMHAWK 
+CamHawk is a camera phishing tool that tricks users into granting webcam access captures their images and sends them to your machine
+https://github.com/s-r-e-e-r-a-j/CamHawk
+
+- Instalacion
+git clone https://github.com/s-r-e-e-r-a-j/CamHawk.git tools/CamHawk
+cd tools/CamHawk
+cd CamHawk
+bash camhawk.sh
+
+
+
 *****************************************************
 
 PHOTON
