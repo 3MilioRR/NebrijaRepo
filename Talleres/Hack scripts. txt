@@ -29,6 +29,12 @@ nmap -sV -p T:22,80,9929,31337  scanme.nmap.org <--- Sondear puertos abiertos, p
 nmap –sA 45.33.32.156          <---- Comprobación de Firewall Root
 
 
+--- CAM-HAWK
+
+cd tools/CamHawk
+bash camhawk.sh
+
+
 --- PYPHISHER
 
 cd tools/tphisher
