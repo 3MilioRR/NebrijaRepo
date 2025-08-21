@@ -8,9 +8,17 @@ python3 sherlock ericorui -o exit.txt
 
 
 *****************************************************
+BLACKBIRD
+# An OSINT tool to search for accounts by username and email in social networks.
+cd tools/blackbird
+python blackbird.py --username bob
+python blackbird.py --email bob@example.com 
+python blackbird.py --email  --pdf
+
+
+*****************************************************
 SPIDERFOOT
 (instalada)
-
 
 
 *****************************************************
