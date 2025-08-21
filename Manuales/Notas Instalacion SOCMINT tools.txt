@@ -14,6 +14,19 @@ pipx install sherlock-project
 sherlock --version
 
 
+*****************************************************
+BLACKBIRD
+An OSINT tool to search for accounts by username and email in social networks.
+https://github.com/p1ngul1n0/blackbird
+
+# instalación 
+git clone https://github.com/p1ngul1n0/blackbird tools/blackbird
+cd tools/blackbird
+pip install -r requirements.txt
+# ejecución
+python blackbird.py --username bob
+python blackbird.py --email bob@example.com 
+
 
 *****************************************************
 SOCIAL ANALIZER
