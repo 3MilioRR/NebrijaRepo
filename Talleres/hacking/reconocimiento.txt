@@ -3,9 +3,12 @@
 
 WARNING: EL RECONOCIMIENTO Y ENUMERACION DE PAGINAS WEB, REQUIERE AUTORIZACION DEL PROPIETARIO.
 
-En el siguiente enlace, figuran páginas web que participan en programas de bug bounty. 
-Bajo esta condición, es posible hacer un reconocimiento de las mismas: 
-https://hackerone.com/directory/programs
+En los siguientes enlaces figuran direcorios de páginas web que participan en programas de bug bounty. 
+Bajo determinadas condiciones, es posible realizar tareas de hacking ético contra elals.
+Pero ¡ojo!. Revisa siempre antes el SCOPE, que te indicará lo que está autorizado y lo que está prohibido: 
+ - https://hackerone.com/directory/programs
+ - https://www.bugbountydirectory.com/programs
+ - https://www.intigriti.com/researchers/bug-bounty-programs
 
 
 ------------------------------------------
