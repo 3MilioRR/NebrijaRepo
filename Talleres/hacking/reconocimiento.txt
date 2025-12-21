@@ -35,6 +35,7 @@ sudo apt install httpx-toolkit
 # Para ejecutar HTTPX-Toolkit
 httpx-toolkit -h
 httpx-toolkit -l fichero-urls-de-entrada.txt
+httpx-toolkit -l fichero-urls-de-entrada.txt -H "X-HackerOne-Research: tu_usuario" <-- por compliance del programa
 cat fichero-urls-de-entrada.txt | httpx-toolkit -o fichero-de-salida.txt
 cat /home/antonio/Descargas/example.dominios.txt | httpx-toolkit -o /home/antonio/Descargas/example.live.txt
 
