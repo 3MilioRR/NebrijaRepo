@@ -19,7 +19,8 @@ SpiderFoot automates OSINT for threat intelligence and mapping your attack surfa
 https://github.com/poppopjmp/spiderfoot
 
 Start the server:
-python sf.py -l 127.0.0.1:5001
+spiderfoot -l 127.0.0.1:5001
+(python sf.py -l 127.0.0.1:5001)
 
 
 ****************************************************+
