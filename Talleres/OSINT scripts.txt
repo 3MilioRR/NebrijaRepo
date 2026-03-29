@@ -38,8 +38,11 @@ http://127.0.0.1:5000
 
 
 ***************************************************
-ALFRED RED BIRD - TOOKIE
+ALFRED RED BIRD - TOOKIE OSINT
 cd tools/tookie-osint
-python3 tookie-osint
+python3 -m venv venv
+source venv/bin/activate
+python3 brib.py -u nombre-usuario
+
 target: ID_Usuario
 ejemplo1: -f -a -s
