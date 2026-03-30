@@ -20,3 +20,7 @@ john -w=password.lst password.txt
 sudo john password.lst password.txt
 john --format=crypt password.txt
 john --show passwords.txt
+
+
+
+https://osint.com.ar/comprendiendo-el-cracking-de-contrasenas-con-john-the-ripper/
