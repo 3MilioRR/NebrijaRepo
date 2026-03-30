@@ -96,7 +96,21 @@ https://github.com/thelicato/portswigger-labs
 
 https://albertoestrada.es/hacking/write-up/portswigger-laboratorios/
 https://ciberseguridad.alberlome.com/academia-burp-suite/port-swigger
+
+SQL Injection
 https://medium.com/@agarwaldaksh18/day-29-portswigger-lab-walkthroughs-no-tools-sql-injection-via-url-login-form-293016dc3b74
+
+Path Traversal 
+https://infosecwriteups.com/portswigger-path-traversal-all-labs-walkthrough-bug-bounty-prep-by-dollarboysushil-85ab64d6106a
+
+CSRTF
+https://medium.com/@sakibahamed007/from-vulnerable-tokens-to-exploited-users-a-hands-on-walkthrough-of-portswiggers-csrf-labs-039e77a50e4d
+
+Basic password reset
+https://medium.com/@sakibahamed007/writeup-portswigger-academy-basic-password-reset-poisoning-217e4b5f9759
+
+Host Header Authentication Bypass
+https://medium.com/@sakibahamed007/writeup-portswigger-academy-host-header-authentication-bypass-b7071908343b
 
 9nMoW9D+b\9@:+Rx&nBF;_9my9dE7PZ,
 8C238j+xe?9?5-3IP;4d**(8+\uc)Y7"
