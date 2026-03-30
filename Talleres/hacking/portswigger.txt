@@ -87,6 +87,17 @@ https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-
 
 
 
+
+---- 	WRITEUPs ----------
+
+https://github.com/ricardojoserf/Portswigger-Labs 
+https://github.com/sh3bu/Portswigger_labs
+https://github.com/thelicato/portswigger-labs
+
+https://albertoestrada.es/hacking/write-up/portswigger-laboratorios/
+https://ciberseguridad.alberlome.com/academia-burp-suite/port-swigger
+https://medium.com/@agarwaldaksh18/day-29-portswigger-lab-walkthroughs-no-tools-sql-injection-via-url-login-form-293016dc3b74
+
 9nMoW9D+b\9@:+Rx&nBF;_9my9dE7PZ,
 8C238j+xe?9?5-3IP;4d**(8+\uc)Y7"
 
