@@ -1,0 +1,20 @@
+
+https://krypton.labs.overthewire.org:2231
+
+LEVEL    -   USER       - Password
+
+Level 0	 - krypton0	: 
+Level 1	 - krypton1	: KRYPTONISGREAT
+Level 2	 - krypton2	: LEVEL TWO PASSWORD ROTTEN --> ROTTEN
+Level 3	 - krypton3	: CAESARISEASY
+Level 4	 - krypton4	: BRUTE
+Level 5	 - krypton5	: CLEARTEXT
+Level 6	 - krypton6	:
+Level 7	 - krypton7	:
+
+--- WriteUp
+
+https://beafn28.gitbook.io/beafn28/writeups/overthewire/krypton
+https://axcheron.github.io/writeups/otw/krypton/
+https://github.com/dc865/writeups/blob/master/krypton.md
+

@@ -1,0 +1,51 @@
+https://overthewire.org/wargames/bandit/
+
+LEVEL    -   USER       - Password
+
+Level 0	 - bandit0	: bandit0
+Level 1	 - bandit1	: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If	cat ./-
+Level 2	 - bandit2	: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx	cat ./"--spaces in this filename--"
+Level 3	 - bandit3	: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx	cat ./...Hiding-From-You
+Level 4	 - bandit4	: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ	file ./*
+Level 5	 - bandit5	: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw	find * -type f -size 1033c
+Level 6	 - bandit6	: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG	find / -user bandit7 -group bandit6 -size 33c
+Level 7	 - bandit7	: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj	cat data.txt | grep “millionth”
+Level 8	 - bandit8	: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc	cat data.txt | sort | uniq -c | grep "1 "
+Level 9	 - bandit9	: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM	strings data.txt | grep ==
+Level 10 - bandit10	: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+Level 11 - bandit11	:
+Level 12 - bandit12	:
+Level 13 - bandit13	:
+Level 14 - bandit14	:
+Level 15 - bandit15	:
+Level 16 - bandit16	:
+Level 17 - bandit17	:
+Level 18 - bandit18	:
+Level 19 - bandit19	:
+Level 20 - bandit20	:
+Level 21 - bandit21	:
+Level 22 - bandit22	:
+Level 23 - bandit23	:
+Level 24 - bandit24	:
+Level 25 - bandit25	:
+Level 26 - bandit26	:
+Level 27 - bandit27	:
+Level 28 - bandit28	:
+Level 29 - bandit29	:
+Level 30 - bandit30	:
+Level 31 - bandit31	:
+Level 32 - bandit32	:
+Level 33 - bandit33	:
+Level 34 - bandit34	:
+
+https://medium.com/@theincognitess/overthewire-bandit-walkthrough-1-5-1775d07c96ba
+https://medium.com/@theincognitess/overthewire-bandit-walkthrough-6-10-e41e6251dea8
+https://medium.com/@theincognitess/overthewire-bandit-11-15-b4912b48759e
+https://medium.com/@theincognitess/overthewire-bandit-level-15-20-writeup-3c0fb461487c
+https://medium.com/@theincognitess/overthewire-bandit-levels-20-25-a8da0f2e74e5
+
+https://medium.com/@h.nt/overthewire-bandit-levels-1f7c8abe797b
+
+https://rafiadw.medium.com/bandit-overthewire-934bbceddc9b (1 a 17)
+https://medium.com/@syahrinalfin105/overthewire-bandit-walkthrough-85bf644fdd5a (1 a 20)
+https://medium.com/@lukegearty/overthewire-bandit-walkthrough-5dc4c69a9684 (1 a 33)
