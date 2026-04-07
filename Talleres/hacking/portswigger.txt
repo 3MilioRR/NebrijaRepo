@@ -94,6 +94,7 @@ https://github.com/ricardojoserf/Portswigger-Labs
 https://github.com/frank-leitner/portswigger-websecurity-academy
 https://github.com/sh3bu/Portswigger_labs
 https://github.com/thelicato/portswigger-labs
+https://github.com/juanpoch/PortSwigger_Academy
 
 https://albertoestrada.es/hacking/write-up/portswigger-laboratorios/
 https://ciberseguridad.alberlome.com/academia-burp-suite/port-swigger
