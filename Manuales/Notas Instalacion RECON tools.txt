@@ -1,0 +1,17 @@
+
+Tools para reconocimiento de superficie
+
+***********************************
+TRACEINTEL
+https://github.com/karndeepbaror/traceintel
+Asincrynchronous OSINT tool for IP address intelligence that aggregates data from multiple APIs to provide accurate geolocation, network, VPN, paste, and service‑related insights.
+
+git clone https://github.com/karndeepbaror/traceintel.git tools/traceintel
+cd traceintel
+cd TraceIntel
+pip3 install -r requirements.txt
+
+usage
+python traxosint.py --help
+python traxosint.py 8.8.8.8
+
