@@ -12,7 +12,6 @@ cd tools/NetRadar
 bash netradar.sh
 
 
-
 TooL: nmap
 observaciones: SOLO estas autorizado a lanzar escaners contra el sitio web: scanme.nmap.org
 Guía de referencia de Nmap: https://nmap.org/man/es/index.html
@@ -27,6 +26,15 @@ nmap -p 20-1024 45.33.32.156   <--- sondea los puertos indicados
 nmap -v -A scanme.nmap.org     <--- Habilita la detección de SO y de versión 
 nmap -sV -p T:22,80,9929,31337  scanme.nmap.org <--- Sondear puertos abiertos, para obtener información de servicio/versión
 nmap –sA 45.33.32.156          <---- Comprobación de Firewall Root
+
+
+Tool: TraceIntel
+observaciones: Se requiere autorizacion para escanear redes, incluso propias
+
+para ejecutar Traceintel
+cd tools/traceintel/TraceIntel
+python traxosint.py <ip-address>
+
 
 
 --- CAM-HAWK
