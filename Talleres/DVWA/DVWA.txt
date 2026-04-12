@@ -81,9 +81,11 @@ cambiar el comando cmd al gusto
 
 - CSRF: Cross-Site Request Forgery (Falsificación por Solicitud Transversal)
 Es un tipo de ataque que permite a un atacante engañar a un usuario para que realice acciones en una aplicación web en la que está autenticado.
-Viendo como trabaja el formulario de cambio de contraseña, 
+Vemos en la URL cómo trabaja el formulario de cambio de contraseña:
+http://localhost:8081/vulnerabilities/csrf/?password_new=1qaz&password_conf=1qaz&Change=Change#"
 
-es posible crear un enlace para obligar 
+La idea es crear un enlace (correo, html, ...) engañando al usuario para que cambie su contraseña. El usuario pierde el control. el atacante se hace con el. 
+http://localhost:8081/vulnerabilities/csrf/?password_new=12345&password_conf=12345&Change=Change#"
 
 
 
