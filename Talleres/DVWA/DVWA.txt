@@ -11,7 +11,7 @@ docker run --rm -it -p 8081:80 vulnerables/web-dvwa
 
 para visualizar DVWA
 arrancar un navegador y teclear
-localhost:80
+localhost:8081
 
 para accder, en la pantalla de login 
 user: admin
