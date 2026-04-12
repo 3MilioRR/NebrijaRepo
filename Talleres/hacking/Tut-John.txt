@@ -22,5 +22,7 @@ john --format=crypt password.txt
 john --show passwords.txt
 
 
+ejemplo 
+john --show --format=raw-md5 DVWAhashes.txt
 
 https://osint.com.ar/comprendiendo-el-cracking-de-contrasenas-con-john-the-ripper/
