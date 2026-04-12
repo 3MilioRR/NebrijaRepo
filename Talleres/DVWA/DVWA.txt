@@ -63,7 +63,7 @@ uso peligroso: subir una shell.php
 
 - XSS reflecting
 <script>alert("Pagina vulnerable en nivel low")</script>
-<img src="https://XXX" alt="YYY" />
+<img src="https://XXX" alt="YYY" /> <-- probar con una imagen subida en el ejercicio anterior "https://localhost:8081/hackable/uploads/nombre-fichero
 
 - XSS persistente
 probamos que es explotable
