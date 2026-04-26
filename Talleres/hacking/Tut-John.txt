@@ -1,3 +1,18 @@
+
+---- HOHN THE RIPPER -------
+
+On default Kali Linux installations, the file rockyou.txt is in the /usr/share/wordlists/ directory.
+Para descomprimirlo:
+gzip -d rockyou.txt.gz
+
+- Repositorio con cientos de ficheros de ejempllo para hacer cracking
+https://github.com/openwall/john-samples
+- Repositorio con cientos de diccionarios (wordlists) 
+https://weakpass.com/wordlists
+
+
+---- EJEMPLOS DE USO
+
 john -test
 cd Documentos
 john SimplePassword.txt 
