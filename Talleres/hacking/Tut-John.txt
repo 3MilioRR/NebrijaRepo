@@ -1,5 +1,5 @@
 
----- HOHN THE RIPPER -------
+---- JOHN THE RIPPER -------
 
 On default Kali Linux installations, the file rockyou.txt is in the /usr/share/wordlists/ directory.
 Para descomprimirlo:
@@ -20,12 +20,30 @@ john --show SimplePassword.txt
 
 con diccionario
 john --wordlist=SimpleDictionary.lst SimplePassword.txt
-john --show Simplepassword.txt
+john --show SimplePassword.txt
 
-john --wordlist=SimpleDictionary.lst UserPassword.txt
-john --show UserPassword.txt
 
-.....
+
+------- CRACKING ZIP archives
+- creamos un fichero llamado secret.txt con algún comtenido.
+echo "Esto es un mensaje secreto." > secret.txt
+- Lo comprimimos en un zip protegido por password (cuando lo pida introducir una password incluida en tu diccionario. Para el ejemplo abc123)
+zip -e secreto.zip secret.txt
+
+-- Para resolverlo
+- 1º Extraer el hash del fichero zip usando zip2john (el comando zip2john extrae el hash del zip y lo guarda en el fichero de texto zip_hash.txt). 
+zip2john secreto.zip > zip_hash.txt
+- ejecuta John the Ripper de la manera normal con el diccionario.
+john --wordlist=SimpleDictionary.txt zip_hash.txt
+
+
+------- CRACKING KEE PASS archives
+- Muy similar a crackear .zip. pero usando la utilidad keepass2john
+keepass2john CrackThis.kdb > CrackThis.txt
+
+
+
+....
 
 sudo cp /etc/shadow /root/
 adduser user1
