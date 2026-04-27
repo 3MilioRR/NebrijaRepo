@@ -38,7 +38,7 @@ john --wordlist=SimpleDictionary.txt zip_hash.txt
 
 
 ------- CRACKING KEE PASS archives
-- Muy similar a crackear .zip. pero usando la utilidad keepass2john (password: tst)
+- Muy similar a crackear .zip. pero usando la utilidad keepass2john (password del fichero: tst)
 keepass2john Test_John.kdbx > Hashed_John.txt
 john --wordlist=SimpleDictionary.txt Hashed_John.txt
 (john --show Hashed_John.tx)
